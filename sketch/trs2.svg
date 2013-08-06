@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="250px" height="250px" viewBox="0 0 250 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(127.000000, 110.000000) rotate(-20.000000) translate(-127.000000, -110.000000) translate(34.000000, 57.000000)">
+            <path d="M41.4178637,53.0065207 L77,67.45714 L77,30.2266966 L6.95410569e-09,0 L0,36.4413709 L15.7765343,43.1283354 L15.4096382,105 L41.4178645,104.999998 L41.4178637,53.0065207 Z M41.4178637,53.0065207" id="Path 4" fill="#FF7A7A"></path>
+            <path d="M105.832361,77.2281259 L143,91.614063 L142.629487,56.142036 L77,31 L77,106 L105.832361,105.999999 L105.832361,77.2281259 Z M105.832361,77.2281259" id="Path 4" fill="#87BAFF"></path>
+            <path d="M186,72.6427235 L184.890496,105.975972 L154.56421,94.5316006 L154.564208,106 L106,105.975972 L106,77.1058848 L143.0994,91.5409283 L142.770735,56 L186,72.6427235 Z M186,72.6427235" id="Path 4" fill="#66FF9A"></path>
+        </g>
+        <g id="Group" transform="translate(-109.494322, 280.272576) rotate(-20.000000) translate(109.494322, -280.272576) translate(-235.994322, 208.272576)" fill="#66FF9A">
+            <path d="M253,98.5876382 L251.490836,143.826116 L210.240566,128.294298 L210.240563,143.858726 L144.182796,143.826116 L144.182796,104.644852 L194.645958,124.235484 L194.198902,76.0008364 L253,98.5876382 Z M253,98.5876382" id="Path 4"></path>
+        </g>
+    </g>
+</svg>
