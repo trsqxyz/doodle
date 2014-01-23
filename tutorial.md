@@ -44,4 +44,57 @@ sitecustomize モジュールも同じように動作しますが、一般的に
 >>> text
 'Put several strings within parentheses to have them joined together.'
 
+# 4. その他の制御フローツール
+## 4.2. for 文
+ループ内部でイテレートしているシーケンスを修正する必要があれば (例えば選択されたアイテムを複製するために)、最初にコピーを作ることをお勧めします。シーケンスに対するイテレーションは暗黙にコピーを作りません。スライス記法はこれを特に便利にします:
+>>>
 
+>>> for w in words[:]:  # Loop over a slice copy of the entire list.
+...     if len(w) > 6:
+...         words.insert(0, w)
+...
+>>> words
+['defenestrate', 'cat', 'window', 'defenestrate']
+
+## 4.4. break 文と continue 文とループの else 節
+for ループの次のイテレーションに戻る continue 文以降の処理は行われない
+
+## 4.4.7. 引数リストのアンパック
+引数がすでにリストやタプルになっていて、個別な固定引数を要求する関数呼び出しに渡すためにアンパックする必要がある場合には、逆の状況が起こります。例えば、組み込み関数 range() は引数 start と stop を別に与える必要があります。個別に引数を与えることができない場合、関数呼び出しを * 演算子を使って書き、リストやタプルから引数をアンパックします:
+>>>
+
+>>> list(range(3, 6))            # normal call with separate arguments
+[3, 4, 5]
+>>> args = [3, 6]
+>>> list(range(*args))            # call with arguments unpacked from a list
+[3, 4, 5]
+
+同じやりかたで、 ** オペレータを使って辞書でもキーワード引数を渡すことができます:
+>>>
+
+>>> def parrot(voltage, state='a stiff', action='voom'):
+...     print("-- This parrot wouldn't", action, end=' ')
+...     print("if you put", voltage, "volts through it.", end=' ')
+...     print("E's", state, "!")
+...
+>>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+>>> parrot(**d)
+-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !
+
+## 4.7.7. 関数のアノテーション
+関数のアノテーション はユーザ定義関数に対する完全にオプションな任意のメタデータ情報です。 Python 自身と標準ライブラリの両方とも、あらゆる意味で関数アノテーションを利用しません; このセクションは単に文法を示します。サードパーティのプロジェクトは、ドキュメンテーションや型検査、その他の用途のために関数アノテーションを自由に使用することができます。
+
+アノテーションは関数の __annotations__ 属性に辞書として格納され、関数の他の部分には何も影響がありません。パラメータアノテーションは、パラメータ名の後にコロンを続けることによって定義され、その後にアノテーションの値として評価される式が置かれます。戻り値アノテーションは、パラメータリストと def ステートメントの終わりを表すコロンの間に置かれたリテラル -> によって定義され、その後に式が続きます。次の例は無意味な位置引数とキーワード引数、そして戻り値アノテーションを持っています:
+>>>
+
+>>> def f(ham: 42, eggs: int = 'spam') -> "Nothing to see here":
+...     print("Annotations:", f.__annotations__)
+...     print("Arguments:", ham, eggs)
+...
+>>> f('wonderful')
+Annotations: {'eggs': <class 'int'>, 'return': 'Nothing to see here', 'ham': 42}
+Arguments: wonderful spam
+
+## 4.8. 間奏曲: コーディングスタイル
+慣習では CamelCase をクラス名に使い、 lower_case_with_underscores を関数名やメソッド名に使います
+ 
