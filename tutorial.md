@@ -97,4 +97,12 @@ Arguments: wonderful spam
 
 ## 4.8. 間奏曲: コーディングスタイル
 慣習では CamelCase をクラス名に使い、 lower_case_with_underscores を関数名やメソッド名に使います
- 
+
+# 5. データ構造
+## 5.3. タプルとシーケンス
+>>> t = x, y, z #  tuple packing
+>>> x, y, z = t #  tuple unpacking
+
+## 5.4. 集合型
+set() or {} 
+  
