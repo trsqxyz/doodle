@@ -149,4 +149,7 @@ heapq モジュールは、通常のリストでヒープを実装するため�
 [-5, 0, 1]
 
 
+# 12. さあ何を？
+http://docs.python.jp/3.3/tutorial/whatnow.html
 
+ 
