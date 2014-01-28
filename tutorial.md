@@ -136,3 +136,17 @@ sys.ps1 と sys.ps2 という変数は一次プロンプトと二次プロンプ
 # 10.1. OS へのインターフェース
 from os import * ではなく、 import os 形式を使うようにしてください。そうすることで、動作が大きく異なる組み込み関数 open() が os.open() で隠蔽されるのを避けられます。
 
+# 11. 標準ライブラリミニツアー - その２
+## リスト操作のためのツール
+heapq モジュールは、通常のリストでヒープを実装するための関数を提供しています。ヒープでは、最も低い値をもつエントリがつねにゼロの位置に配置されます。ヒープは、毎回リストをソートすることなく、最小の値をもつ要素に繰り返しアクセスするようなアプリケーションで便利です。
+>>>
+
+>>> from heapq import heapify, heappop, heappush
+>>> data = [1, 3, 5, 7, 9, 2, 4, 6, 8, 0]
+>>> heapify(data)                      # rearrange the list into heap order
+>>> heappush(data, -5)                 # add a new entry
+>>> [heappop(data) for i in range(3)]  # fetch the three smallest entries
+[-5, 0, 1]
+
+
+
