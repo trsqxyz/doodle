@@ -152,4 +152,5 @@ heapq モジュールは、通常のリストでヒープを実装するため�
 # 12. さあ何を？
 http://docs.python.jp/3.3/tutorial/whatnow.html
 
+# 13. 対話入力編集とヒストリ変換
  
