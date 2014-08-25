@@ -10,20 +10,16 @@
 	<string>b7d299b0a34651d1a0e066786b75aa36168d5809</string>
 	<key>fonts</key>
 	<array>
+		<string>AvenirNext-Regular</string>
 		<string>Raleway-Thin</string>
 		<string>Raleway-Thin</string>
 		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
+		<string>AvenirNext-Regular</string>
 		<string>Raleway-Thin</string>
 		<string>Raleway-Thin</string>
 	</array>
 	<key>length</key>
-	<integer>74663</integer>
+	<integer>21669</integer>
 	<key>version</key>
 	<integer>18</integer>
 </dict>

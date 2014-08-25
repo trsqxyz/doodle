@@ -10,20 +10,13 @@
 	<string>b7d299b0a34651d1a0e066786b75aa36168d5809</string>
 	<key>fonts</key>
 	<array>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
-		<string>Raleway-Thin</string>
+		<string>Baskerville</string>
+		<string>Baskerville</string>
+		<string>Baskerville</string>
+		<string>Baskerville</string>
 	</array>
 	<key>length</key>
-	<integer>74663</integer>
+	<integer>2388895</integer>
 	<key>version</key>
 	<integer>18</integer>
 </dict>
